@@ -1,9 +1,9 @@
 const btn = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav-menu');
 
-/* Abrir / fechar pelo botão */
+/* Abrir / fechar no botão */
 btn.addEventListener('click', (e) => {
-  e.stopPropagation(); // impede conflito com clique fora
+  e.stopPropagation();           // 🔴 ESSENCIAL
   nav.classList.toggle('active');
 });
 
@@ -14,14 +14,14 @@ document.querySelectorAll('.nav-menu a').forEach(link => {
   });
 });
 
-/* Fechar ao clicar fora do menu */
+/* Fechar ao clicar fora */
 document.addEventListener('click', (e) => {
   if (!nav.contains(e.target) && !btn.contains(e.target)) {
     nav.classList.remove('active');
   }
 });
 
-/* Fechar ao mudar o tamanho da tela */
+/* Fechar ao redimensionar (girar celular) */
 window.addEventListener('resize', () => {
   if (window.innerWidth > 768) {
     nav.classList.remove('active');
