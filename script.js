@@ -27,3 +27,13 @@ window.addEventListener('resize', () => {
     nav.classList.remove('active');
   }
 });
+/* SERVIÇOS - ACORDION (isolado) */
+document.querySelectorAll('.service-item').forEach(item => {
+  item.addEventListener('click', () => {
+
+    document.querySelectorAll('.service-item')
+      .forEach(i => i.classList.remove('active'));
+
+    item.classList.add('active');
+  });
+});
