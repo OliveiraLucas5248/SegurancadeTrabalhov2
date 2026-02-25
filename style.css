@@ -24,10 +24,35 @@
 
 html, body {
   font-family: 'Inter', sans-serif;
-  background: var(--gray-100);
   color: var(--text-dark);
   scroll-behavior: smooth;
 }
+
+/* ==================================================
+   FUNDO + MARCA D’ÁGUA LATERAL
+================================================== */
+
+body {
+  background: linear-gradient(180deg, #e9edf3 0%, #dfe5ec 100%);
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("logo-site-512-png.png");
+  background-repeat: repeat;
+  background-size: 260px;
+  opacity: 0.075;
+  filter: grayscale(100%) sepia(100%) hue-rotate(190deg) saturate(500%) brightness(70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ==================================================
+   CONTAINER
+================================================== */
 
 .container {
   width: 92%;
@@ -45,6 +70,7 @@ header {
   display: flex;
   align-items: center;
   position: relative;
+  z-index: 2;
 }
 
 .header {
@@ -55,10 +81,7 @@ header {
 
 .logo-area img {
   height: 120px;
-  object-fit: contain;
 }
-
-/* MENU DESKTOP */
 
 .nav-menu {
   display: flex;
@@ -76,8 +99,6 @@ header {
   color: var(--gold);
 }
 
-/* BOTÃO MOBILE */
-
 .menu-toggle {
   display: none;
   background: none;
@@ -88,10 +109,20 @@ header {
 }
 
 /* ==================================================
-   SEÇÕES GERAIS
+   SEÇÕES (EFEITO FEED)
 ================================================== */
 
 .section {
+  position: relative;
+  z-index: 1;
+  max-width: 1150px;
+  margin: 80px auto;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+}
+
+.section .container {
   padding: 80px 0;
 }
 
@@ -164,6 +195,8 @@ header {
   display: block;
 }
 
+/* Cards internos */
+
 .service-item {
   background: #ffffff;
   padding: 14px 18px;
@@ -206,8 +239,18 @@ header {
 ================================================== */
 
 .contato-section {
-  background: linear-gradient(180deg, var(--blue-800) 0%, var(--blue-900) 100%);
-  color: #fff;
+  position: relative;
+  z-index: 1;
+  max-width: 1150px;
+  margin: 80px auto;
+  border-radius: 18px;
+  background: linear-gradient(135deg, var(--blue-800), var(--blue-900));
+  box-shadow: 0 25px 70px rgba(0,0,0,0.25);
+  color: #ffffff;
+}
+
+.contato-section .container {
+  padding: 80px 0;
 }
 
 .contato-grid {
@@ -254,6 +297,8 @@ footer {
   text-align: center;
   padding: 28px 0;
   font-size: 14px;
+  position: relative;
+  z-index: 2;
 }
 
 /* ==================================================
@@ -271,8 +316,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
-  font-size: 28px;
   box-shadow: 0 15px 35px rgba(0,0,0,0.3);
   z-index: 999;
   transition: 0.3s;
@@ -296,13 +339,11 @@ footer {
     height: 95px;
   }
 
-  /* MENU MOBILE */
-
   .nav-menu {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 100%; /* 🔥 abre exatamente abaixo do header */
+    top: 100%;
     left: 0;
     width: 100%;
     background: var(--blue-800);
@@ -322,16 +363,17 @@ footer {
     display: block;
   }
 
-  /* LAYOUT MOBILE */
-
   .grid-2,
   .contato-grid {
     grid-template-columns: 1fr;
     gap: 35px;
   }
 
-  .contato-mapa iframe {
-    height: 260px;
+  .section,
+  .contato-section {
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
   }
 
 }
