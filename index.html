@@ -5,121 +5,303 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>G&R Consulting – Engenharia & Consultoria</title>
 
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="style.css">
 
-  <!-- Fonte -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Ícones -->
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 </head>
 <body>
 
 <header>
   <div class="container header">
     <div class="logo-area">
-      <img src="logo-site-512.png" alt="G&R Consulting">
+      <img src="logo-site-512-png.png" alt="G&R Consulting">
     </div>
 
-    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    <button class="menu-toggle">☰</button>
 
     <nav class="nav-menu">
       <a href="#sobre">Sobre</a>
       <a href="#servicos">Serviços</a>
-      <a href="#projetos">Projetos</a>
       <a href="#contato">Contato</a>
     </nav>
   </div>
 </header>
 
-
+<!-- SOBRE -->
+<!-- SOBRE -->
 <section id="sobre" class="section">
   <div class="container grid-2">
     <div>
-      <h3>Sobre a empresa</h3>
+      <h2>Sobre a G&R Consulting</h2>
       <p>
-        A G&R Consulting atua com responsabilidade técnica, oferecendo soluções
-        completas em engenharia, segurança do trabalho, laudos e licenciamento.
+        A G&R oferece soluções integradas de Engenharia de Segurança do Trabalho e Gestão Ambiental, oferecendo serviços técnicos especializados que promovam a prevenção de acidentes, a preservação da saúde ocupacional, a conformidade legal e a sustentabilidade dos empreendimentos.
+      </p>
+
+      <p>
+        Nosso objetivo é fornecer assessoria técnica completa, contemplando a elaboração de laudos, programas e pareceres técnicos, realização de treinamentos normativos e comportamentais, locação de equipamentos de segurança e monitoramento, bem como suporte contínuo às empresas na implementação e manutenção de sistemas de gestão em Segurança do Trabalho e Meio Ambiente.
+      </p>
+
+      <p>
+        Atuamos de forma estratégica e preventiva, com base na legislação vigente, normas regulamentadoras e boas práticas técnicas, visando mitigar riscos ocupacionais e impactos ambientais, reduzir passivos trabalhistas e ambientais, assegurar conformidade com órgãos fiscalizadores e fortalecer a cultura de segurança e responsabilidade socioambiental nas organizações.
+      </p>
+
+      <p>
+        Comprometemo-nos com a excelência técnica, ética profissional e atualização constante, entregando soluções eficazes, personalizadas e alinhadas às necessidades operacionais de cada cliente.
       </p>
     </div>
-    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80" alt="Consultoria técnica">
 
+    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80" alt="Consultoria técnica">
   </div>
 </section>
 
+<!-- SERVIÇOS -->
 <section id="servicos" class="section bg-light">
   <div class="container">
-    <h3 class="center">Serviços</h3>
+    <h2>Serviços</h2>
 
-    <h4 class="service-title">Treinamentos</h4>
-    <div class="services-grid">
-      <div class="service-item"><h5>NR 05 – CIPA</h5><p>Comissão Interna de Prevenção de Acidentes e de Assédio.</p></div>
-      <div class="service-item"><h5>NR 06 – EPI</h5><p>Equipamentos de Proteção Individual.</p></div>
-      <div class="service-item"><h5>NR 10</h5><p>Segurança em instalações e serviços em eletricidade.</p></div>
-      <div class="service-item"><h5>NR 11</h5><p>Transporte, movimentação, armazenagem e manuseio de materiais.</p></div>
-      <div class="service-item"><h5>NR 12</h5><p>Segurança no trabalho em máquinas e equipamentos.</p></div>
-      <div class="service-item"><h5>NR 18</h5><p>Segurança e saúde no trabalho na indústria da construção.</p></div>
-      <div class="service-item"><h5>NR 20</h5><p>Segurança e saúde no trabalho com inflamáveis e combustíveis.</p></div>
-      <div class="service-item"><h5>NR 23</h5><p>Proteção contra incêndios.</p></div>
-      <div class="service-item"><h5>NR 33</h5><p>Segurança e saúde nos trabalhos em espaços confinados.</p></div>
-      <div class="service-item"><h5>NR 35</h5><p>Trabalho em altura.</p></div>
+    <div class="accordion">
+
+      <!-- TREINAMENTOS -->
+      <div class="accordion-category">
+        <div class="accordion-header">Treinamentos</div>
+        <div class="accordion-content">
+
+          <div class="service-item">
+            <div class="service-title">NR 05 – CIPA</div>
+            <div class="service-description">Comissão Interna de Prevenção de Acidentes e de Assédio.</div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-title">NR 06 – EPI</div>
+            <div class="service-description">Equipamentos de Proteção Individual.</div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-title">NR 10</div>
+            <div class="service-description">Segurança em instalações e serviços em eletricidade.</div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-title">NR 11</div>
+            <div class="service-description">Transporte, movimentação, armazenagem e manuseio de materiais.</div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-title">NR 12</div>
+            <div class="service-description">Segurança no trabalho em máquinas e equipamentos.</div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-title">NR 18</div>
+            <div class="service-description">Segurança e saúde no trabalho na indústria da construção.</div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-title">NR 20</div>
+            <div class="service-description">Segurança e saúde no trabalho com inflamáveis e combustíveis.</div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-title">NR 23</div>
+            <div class="service-description">Proteção contra incêndios.</div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-title">NR 33</div>
+            <div class="service-description">Segurança e saúde nos trabalhos em espaços confinados.</div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-title">NR 35</div>
+            <div class="service-description">Trabalho em altura.</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- LAUDOS -->
+      <div class="accordion-category">
+        <div class="accordion-header">Laudos</div>
+        <div class="accordion-content">
+
+          <div class="service-item">
+            <div class="service-title">SPQ</div>
+            <div class="service-description">Sistema de Proteção Contra Quedas.</div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-title">PGR</div>
+            <div class="service-description">Programa de Gerenciamento de Riscos.</div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-title">LTCAT</div>
+            <div class="service-description">Laudo Técnico das Condições Ambientais do Trabalho.</div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-title">PCMSO</div>
+            <div class="service-description">Programa de Controle Médico de Saúde Ocupacional.</div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-title">PPP</div>
+            <div class="service-description">Perfil Profissiográfico Previdenciário.</div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-title">PGRS</div>
+            <div class="service-description">Programa de Gerenciamento de Resíduos Sólidos.</div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-title">RAPP</div>
+            <div class="service-description">Relatório de Atividades Potencialmente Poluidoras.</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- LICENÇAS -->
+      <div class="accordion-category">
+        <div class="accordion-header">Licenças</div>
+        <div class="accordion-content">
+
+          <div class="service-item">
+            <div class="service-title">Licenciamento Ambiental</div>
+            <div class="service-description">Processo municipal, estadual e federal.</div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-title">Certificado IBAMA</div>
+            <div class="service-description">Certificado de regularidade ambiental.</div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-title">Transporte de Produtos Perigosos</div>
+            <div class="service-description">Autorização ambiental para transporte.</div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-title">AVCB</div>
+            <div class="service-description">Auto de Vistoria do Corpo de Bombeiros.</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- INSPEÇÕES -->
+      <div class="accordion-category">
+        <div class="accordion-header">Inspeções</div>
+        <div class="accordion-content">
+
+          <div class="service-item">
+            <div class="service-title">Diagnóstico de Segurança</div>
+            <div class="service-description">Avaliação técnica da operação.</div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-title">Sistema Preventivo de Incêndio</div>
+            <div class="service-description">Análise e adequação de sistemas.</div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-title">FMEA</div>
+            <div class="service-description">Failure Mode and Effects Analysis.</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- LOCAÇÕES -->
+      <div class="accordion-category">
+        <div class="accordion-header">Locações</div>
+        <div class="accordion-content">
+
+          <div class="service-item">
+            <div class="service-title">Dinamômetro</div>
+            <div class="service-description">Equipamento para medição de desempenho.</div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-title">Multigás</div>
+            <div class="service-description">Detector de múltiplos gases.</div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-title">Decibelímetro</div>
+            <div class="service-description">Medição de níveis de ruído.</div>
+          </div>
+
+        </div>
+      </div>
+
     </div>
-
-    <h4 class="service-title">Laudos</h4>
-    <div class="services-grid">
-      <div class="service-item"><h5>SPQ</h5><p>Sistema de Proteção Contra Quedas.</p></div>
-      <div class="service-item"><h5>PGR</h5><p>Programa de Gerenciamento de Riscos.</p></div>
-      <div class="service-item"><h5>LTCAT</h5><p>Laudo Técnico das Condições Ambientais do Trabalho.</p></div>
-      <div class="service-item"><h5>PCMSO</h5><p>Programa de Controle Médico de Saúde Ocupacional.</p></div>
-      <div class="service-item"><h5>PPP</h5><p>Perfil Profissiográfico Previdenciário.</p></div>
-      <div class="service-item"><h5>PGRS</h5><p>Programa de Gerenciamento de Resíduos Sólidos.</p></div>
-      <div class="service-item"><h5>RAPP</h5><p>Relatório de Atividades Potencialmente Poluidoras.</p></div>
-    </div>
-
-    <h4 class="service-title">Licenças</h4>
-    <div class="services-grid">
-      <div class="service-item"><h5>Licenciamento Ambiental</h5><p>Processos municipais, estaduais e federais.</p></div>
-      <div class="service-item"><h5>Certificado IBAMA</h5><p>Certificado de regularidade ambiental.</p></div>
-      <div class="service-item"><h5>Transporte de Produtos Perigosos</h5><p>Autorização ambiental para transporte.</p></div>
-      <div class="service-item"><h5>AVCB</h5><p>Auto de Vistoria do Corpo de Bombeiros.</p></div>
-    </div>
-
-    <h4 class="service-title">Inspeções</h4>
-    <div class="services-grid">
-      <div class="service-item"><h5>Diagnóstico de Segurança</h5><p>Avaliação técnica da operação.</p></div>
-      <div class="service-item"><h5>Sistema Preventivo de Incêndio</h5><p>Análise e adequação de sistemas de prevenção.</p></div>
-      <div class="service-item"><h5>FMEA</h5><p>Análise de modos de falha e seus efeitos.</p></div>
-    </div>
-
   </div>
 </section>
 
-<section id="contato" class="section bg-dark">
-  <div class="container">
-    <h3>Contato</h3>
-    <p>Email: contato@grconsulting.com.br</p>
+<section id="contato" class="section contato-section">
+  <div class="container contato-grid">
+
+    <div class="contato-info">
+      <h2>Contato</h2>
+
+      <p>
+        Atendemos empresas em Engenharia de Segurança do Trabalho
+        e Gestão Ambiental, oferecendo soluções técnicas completas
+        e especializadas.
+      </p>
+
+      <div class="contato-item">
+        <strong>Telefone / WhatsApp:</strong><br>
+        (41) 98876-3026
+      </div>
+
+      <div class="contato-item">
+        <strong>Email:</strong><br>
+        contato@grconsulting.com.br
+      </div>
+
+      <div class="contato-item">
+        <strong>Localização:</strong><br>
+        Curitiba – PR
+      </div>
+
+      <div class="contato-item">
+        <strong>Atendimento:</strong><br>
+        Segunda a Sexta – 08h às 18h
+      </div>
+    </div>
+
+    <div class="contato-mapa">
+      <iframe 
+        src="https://www.google.com/maps?q=Curitiba%20PR&output=embed"
+        loading="lazy"
+        allowfullscreen>
+      </iframe>
+    </div>
+
   </div>
 </section>
 
 <footer>
-  <p>© 2026 G&R Consulting</p>
+  © 2026 G&R Consulting
 </footer>
 
-<a href="https://wa.me/5541988763026"
-   class="whatsapp-float"
-   target="_blank">
-  <i class="fab fa-whatsapp"></i>
+<a href="https://wa.me/5541988763026" class="whatsapp-float" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" 
+       viewBox="0 0 32 32" 
+       width="28" 
+       height="28" 
+       fill="white">
+    <path d="M16 .4C7.5.4.6 7.3.6 15.8c0 2.8.7 5.5 2.1 7.9L.4 31.6l8.1-2.1c2.3 1.3 4.9 2 7.5 2 8.5 0 15.4-6.9 15.4-15.4C31.4 7.3 24.5.4 16 .4zm0 28.2c-2.4 0-4.7-.6-6.7-1.8l-.5-.3-4.8 1.2 1.3-4.7-.3-.5c-1.3-2.1-2-4.4-2-6.8C3 8.1 9.1 2 16.6 2S30.2 8.1 30.2 15.7 23.9 28.6 16 28.6zm8.2-9.6c-.4-.2-2.3-1.1-2.6-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.3 1.5-.2.2-.5.2-.9.1-.4-.2-1.6-.6-3.1-1.9-1.1-1-1.9-2.3-2.1-2.7-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.7.2-.2.3-.4.4-.6.1-.2 0-.4 0-.6 0-.2-.9-2.2-1.2-3-.3-.7-.6-.6-.9-.6h-.8c-.3 0-.6.1-.9.4-.3.4-1.2 1.1-1.2 2.7 0 1.6 1.2 3.1 1.3 3.3.2.2 2.3 3.5 5.6 4.9 3.3 1.4 3.3.9 3.9.9.6 0 2-.8 2.3-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.7-.4z"/>
+  </svg>
 </a>
 
 <script src="script.js"></script>
 </body>
 </html>
-
-  
-

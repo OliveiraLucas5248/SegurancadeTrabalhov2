@@ -1,39 +1,40 @@
+// MENU MOBILE
 const btn = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav-menu');
 
-/* Abrir / fechar no botão */
-btn.addEventListener('click', (e) => {
-  e.stopPropagation();           // 🔴 ESSENCIAL
-  nav.classList.toggle('active');
-});
+if (btn) {
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    nav.classList.toggle('active');
+  });
 
-/* Fechar ao clicar em um link */
-document.querySelectorAll('.nav-menu a').forEach(link => {
-  link.addEventListener('click', () => {
-    nav.classList.remove('active');
+  document.addEventListener('click', (e) => {
+    if (!nav.contains(e.target) && !btn.contains(e.target)) {
+      nav.classList.remove('active');
+    }
+  });
+}
+
+// ACCORDION CATEGORIA
+document.querySelectorAll('.accordion-header').forEach(header => {
+  header.addEventListener('click', () => {
+
+    const category = header.parentElement;
+
+    document.querySelectorAll('.accordion-category').forEach(cat => {
+      if (cat !== category) {
+        cat.classList.remove('active');
+      }
+    });
+
+    category.classList.toggle('active');
   });
 });
 
-/* Fechar ao clicar fora */
-document.addEventListener('click', (e) => {
-  if (!nav.contains(e.target) && !btn.contains(e.target)) {
-    nav.classList.remove('active');
-  }
-});
-
-/* Fechar ao redimensionar (girar celular) */
-window.addEventListener('resize', () => {
-  if (window.innerWidth > 768) {
-    nav.classList.remove('active');
-  }
-});
-/* SERVIÇOS - ACORDION (isolado) */
+// ACCORDION ITEM
 document.querySelectorAll('.service-item').forEach(item => {
-  item.addEventListener('click', () => {
-
-    document.querySelectorAll('.service-item')
-      .forEach(i => i.classList.remove('active'));
-
-    item.classList.add('active');
+  item.addEventListener('click', (e) => {
+    e.stopPropagation();
+    item.classList.toggle('active');
   });
 });
