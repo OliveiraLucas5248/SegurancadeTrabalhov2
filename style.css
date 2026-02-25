@@ -1,5 +1,5 @@
 /* ==================================================
-   RESET
+   VARIÁVEIS
 ================================================== */
 
 :root {
@@ -11,6 +11,10 @@
   --gray-200: #e5e7eb;
   --text-dark: #1f2933;
 }
+
+/* ==================================================
+   RESET
+================================================== */
 
 * {
   margin: 0;
@@ -72,7 +76,7 @@ header {
   color: var(--gold);
 }
 
-/* BOTÃO MOBILE (escondido no desktop) */
+/* BOTÃO MOBILE */
 
 .menu-toggle {
   display: none;
@@ -89,10 +93,6 @@ header {
 
 .section {
   padding: 80px 0;
-}
-
-.bg-light {
-  background: var(--gray-100);
 }
 
 /* ==================================================
@@ -163,8 +163,6 @@ header {
 .accordion-category.active .accordion-content {
   display: block;
 }
-
-/* ITENS EM LINHAS DESTACÁVEIS */
 
 .service-item {
   background: #ffffff;
@@ -290,17 +288,25 @@ footer {
 
 @media (max-width: 900px) {
 
+  header {
+    height: 95px;
+  }
+
+  .logo-area img {
+    height: 95px;
+  }
+
   /* MENU MOBILE */
 
   .nav-menu {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 120px;
-    right: 0;
+    top: 100%; /* 🔥 abre exatamente abaixo do header */
+    left: 0;
     width: 100%;
     background: var(--blue-800);
-    padding: 20px 0;
+    padding: 15px 0;
     text-align: center;
   }
 
@@ -322,10 +328,6 @@ footer {
   .contato-grid {
     grid-template-columns: 1fr;
     gap: 35px;
-  }
-
-  .logo-area img {
-    height: 95px;
   }
 
   .contato-mapa iframe {
