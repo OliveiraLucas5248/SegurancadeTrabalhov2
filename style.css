@@ -380,3 +380,12 @@ footer {
   }
 
 }
+  /* ===== CORREÇÃO HEADER MOBILE ===== */
+
+  body {
+    padding-top: 95px;
+  }
+
+  .nav-menu {
+    top: 95px;
+  }
