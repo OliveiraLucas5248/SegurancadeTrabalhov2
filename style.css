@@ -346,7 +346,7 @@ footer {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 100%;
+    top: 95px;
     left: 0;
     width: 100%;
     background: var(--blue-800);
@@ -379,13 +379,16 @@ footer {
     box-shadow: none;
   }
 
-}
   /* ===== CORREÇÃO HEADER MOBILE ===== */
 
   body {
     padding-top: 95px;
   }
 
-  .nav-menu {
-    top: 95px;
+  #sobre,
+  #servicos,
+  #contato {
+    scroll-margin-top: 110px;
   }
+
+}
