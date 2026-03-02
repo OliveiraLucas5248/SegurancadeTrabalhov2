@@ -198,8 +198,6 @@ header {
   display: block;
 }
 
-/* Cards internos */
-
 .service-item {
   background: #ffffff;
   padding: 14px 18px;
@@ -328,6 +326,14 @@ footer {
   transform: scale(1.08);
 }
 
+/* ===== CORREÇÃO ÂNCORAS DESKTOP ===== */
+
+#sobre,
+#servicos,
+#contato {
+  scroll-margin-top: 130px;
+}
+
 /* ==================================================
    RESPONSIVO
 ================================================== */
@@ -340,6 +346,10 @@ footer {
 
   .logo-area img {
     height: 95px;
+  }
+
+  body {
+    padding-top: 95px;
   }
 
   .nav-menu {
@@ -377,12 +387,6 @@ footer {
     margin: 0;
     border-radius: 0;
     box-shadow: none;
-  }
-
-  /* ===== CORREÇÃO HEADER MOBILE ===== */
-
-  body {
-    padding-top: 95px;
   }
 
   #sobre,
